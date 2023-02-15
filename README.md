@@ -13,7 +13,7 @@ Repositório para entrega do trabalho individual do módulo 4 referente aos estu
 -  Existem outras entidades além dessas três?
 > Além de curso, turma e alunos, existem também as seguintes entidades:
 >- facilitador
->- unidade
+>- matricula
 
 - Quais são os principais campos e tipos?
 > Verifique abaixo na seção **TABELAS**
@@ -70,3 +70,11 @@ A tabela aluno armazena informações sobre os alunos, incluindo:
 >- `telefone:` telefone do aluno **(tipo string)**
 >- `email:` endereço de email do aluno **(tipo string)**
 >- `id_turma:` chave estrangeira para a entidade turma, na qual o aluno está matriculado **(tipo int)**
+
+### Matriculas
+A tabela matricula armazena as informações sobre as matriculas da instituição
+    (
+      >- `id_matricula:` chave primária do registro de aluno **(tipo int)**
+      >- `id_aluno:` chave registro de aluno **(tipo int)**
+      >- `data_matricula:` data que o aluno iniciou o curso **(tipo data)**
+      >- `id_turma:` chave estrangeira para a entidade turma, na qual o aluno está matriculado´
